@@ -62,6 +62,14 @@ Frontend `.env`
 VITE_API_URL=http://localhost:5000/api
 ```
 
+Frontend production env on Vercel
+
+```env
+VITE_API_URL=https://your-backend-domain/api
+```
+
+This frontend uses Vite env variables only, so frontend env keys must start with `VITE_`. On Vercel, add `VITE_API_URL` in the project Environment Variables settings.
+
 Backend `backend/.env`
 
 ```env
@@ -122,3 +130,4 @@ Chat
 
 - `POST /api/chat/send`
 - `GET /api/chat/:userId`
+
